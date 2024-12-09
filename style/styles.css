@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    color: rgb(248, 244, 244);
+    z-index: 99;
+    
+    
+}
+.container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(75, 65, 134, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99;
+    align-items: center;
+}
+
+#particles-js{
+height: 100vh;
+width: 100%;
+position: fixed;
+z-index: -1;
+background: #000000;
+}
+
+h1 {
+    text-align: center;
+    color: #f7f4f4;
+}
+table {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ajusta automáticamente el ancho de las celdas */
+    overflow: hidden;    /* Oculta cualquier contenido que desborde */
+   
+}
+input {
+    background-color: transparent; /* Hace que el fondo sea transparente */   
+    color: #fcfbfb; /* Asegúrate de que el texto sea visible */
+    width: 70%;
+    margin-right: 15px;
+    width: 50%; /* Controla el ancho del input (en este caso, 50% del contenedor) */
+    height: 30px; /* Altura del input */
+    padding: 5px; /* Ajusta el espacio interno */
+    font-size: 14px; /* Ajusta el tamaño del texto dentro del input */
+    border: 1px solid #ccc; /* Define el borde */
+    border-radius: 4px; /* Bordes redondeados opcionales */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho y altura */
+}
+.tabla-inicio{
+    width: 100%;
+}
+
+.botones{
+    display: flex;
+    gap: 0px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #012417;
+    text-align: left;
+}
+th {
+    background-color: #034b09;
+}
+td input, td select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.result {
+    margin-top: 30px;
+}
+.result table {
+    width: 100%;
+}
+.result th {
+    background-color: #e9ecef;
+}
+.result td {
+    font-weight: bold;
+}
+.result span {
+    color: #007bff;
+}
+footer {
+    text-align: center; /* Esto no afecta porque flexbox está en uso */
+    color: #f3f6f8;
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 50px; /* Espaciado entre los elementos */
+}
+
+footer p {
+    color: #c0d8fa;
+    font-size: 20px;
+}
