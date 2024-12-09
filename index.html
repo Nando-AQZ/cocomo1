@@ -41,6 +41,10 @@
                 <td>Ingrese el valor dentro del rango seleccionado:</td>
                 <td><input type="number" id="valorTipo" placeholder="Ingrese el valor según el tipo seleccionado" required></td>
             </tr>
+            <tr>
+                <td>Ingrese El sueldo por trabajador:</td>
+                <td><input type="number" id="sueldo" placeholder="Ingrese sueldo" required></td>
+            </tr>
         </table>
    <div class="botones">
      <button onclick="calcular()">Calcular</button>
@@ -58,8 +62,9 @@
             let salida = parseFloat(document.getElementById('salida').value);
             let tipo = document.getElementById('tipo').value;
             let valorTipo = parseFloat(document.getElementById('valorTipo').value);
+            let sueld = parseFloat(document.getElementById('sueldo').value);
 
-            if (isNaN(entrada) || isNaN(salida) || isNaN(valorTipo)) {
+            if (isNaN(entrada) || isNaN(salida) || isNaN(valorTipo) || isNaN(sueld)) {
                 alert("Por favor ingrese valores válidos.");
                 return;
             }
@@ -95,7 +100,7 @@
 
             let pnecesarias = persona / tiempo;
             let estimacion = resultado / persona;
-            let salario = 2500;
+            let salario = parseFloat(document.getElementById('sueldo').value);
             let costo = persona * salario;
             let lineaCodigo = costo / resultado;
 
